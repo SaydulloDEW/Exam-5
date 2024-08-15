@@ -1,30 +1,28 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate from React Router
-import img from "../../assets/twitter.svg"; // Ensure the correct path to the SVG
+import { useNavigate } from "react-router-dom"; 
+import img from "../../assets/twitter.svg"; 
 
 const SignUp = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate(); // Initialize useNavigate
-
+  const navigate = useNavigate(); 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Predefined credentials
+
     const correctName = "admin";
     const correctPassword = "password";
 
-    // Check if the entered name and password match the predefined credentials
+
     if (name === correctName && password === correctPassword) {
-      // Save to localStorage
       localStorage.setItem("username", name);
       localStorage.setItem("password", password);
 
-      // Redirect to the login page
+
       navigate("/login");
     } else {
-      // If credentials don't match, you can show an error message or handle it as needed
+
       console.log("Incorrect username or password.");
     }
   };

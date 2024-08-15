@@ -309,7 +309,6 @@ const Home = () => {
                 Follow
               </button>
             </li>
-            {/* Add more suggestions */}
           </ul>
           <a href="#" className="text-blue-500">
             Show more

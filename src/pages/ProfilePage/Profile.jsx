@@ -99,7 +99,6 @@ const Profile = () => {
             alt="Banner"
             className="w-full h-48 object-cover"
           />
-          {/* Profile Image */}
           <div className="absolute left-4 -bottom-12">
             <img
               src={bobir}
@@ -149,7 +148,7 @@ const Profile = () => {
             </div>
           </div>
 
-          {/* Stats */}
+
           <div className="flex mt-4 space-x-8">
             <div className="flex items-center space-x-1">
               <span className="font-bold">67</span>
@@ -161,7 +160,7 @@ const Profile = () => {
             </div>
           </div>
 
-          {/* Tabs */}
+
           <div className="flex justify-around mt-4 text-gray-600 border-b">
             <button className="pb-2 border-b-4 border-blue-500 text-blue-500">
               Tweets
@@ -259,7 +258,6 @@ const Profile = () => {
                 Follow
               </button>
             </li>
-            {/* Add more suggestions */}
           </ul>
           <a href="#" className="text-blue-500">
             Show more
